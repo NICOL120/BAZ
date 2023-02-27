@@ -9,8 +9,8 @@ export interface ConfigInfo {
   anchor_market: string;
   aust_token: string;
   owner: string;
-  Baz_gov: string;
-  Baz_token: string;
+  spectrum_gov: string;
+  spectrum_token: string;
   terraswap_factory: string;
   [k: string]: unknown;
 }

@@ -120,20 +120,20 @@
             <div class="d-flex justify-content-between">
               <div>
                 <div class="f-12 sub-topic">
-                  <ng-container *ngIf="vault.poolInfo.farm === 'Baz'">
+                  <ng-container *ngIf="vault.poolInfo.farm === 'Spectrum'">
                     APR
                   </ng-container>
-                  <ng-container *ngIf="vault.poolInfo.farm !== 'Baz'">
+                  <ng-container *ngIf="vault.poolInfo.farm !== 'Spectrum'">
                     APY
                   </ng-container>
                 </div>
               </div>
               <div>
                 <div class="f-14 fw-bold">
-                  <ng-container *ngIf="vault.poolInfo.farm === 'Baz'">
+                  <ng-container *ngIf="vault.poolInfo.farm === 'Spectrum'">
                     <span class="text-primary"> {{vault.poolAprTotal | percent}}</span>
                   </ng-container>
-                  <ng-container *ngIf="vault.poolInfo.farm !== 'Baz'">
+                  <ng-container *ngIf="vault.poolInfo.farm !== 'Spectrum'">
                     <span *ngIf="vault.pairStat.poolApy > vault.poolAprTotal">
                       <span class="sub-topic text-decoration-line-through text-primary">
                         <span class="sub-topic">{{ vault.poolAprTotal || 0 | percent }}</span>

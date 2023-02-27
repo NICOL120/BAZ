@@ -1,7 +1,7 @@
-import {RewardInfoResponseItem as SpecRewardInfoResponseItem} from '../api/Baz_spec_farm/reward_info_response';
+import {RewardInfoResponseItem as SpecRewardInfoResponseItem} from '../api/spectrum_spec_farm/reward_info_response';
 import {
   RewardInfoResponseItem as AstroportFarmRewardInfoResponseItem
-} from '../api/Baz_astroport_farm/reward_info_response';
+} from '../api/spectrum_astroport_farm/reward_info_response';
 
 import {InjectionToken} from '@angular/core';
 import {PoolResponse} from '../api/terraswap_pair/pool_response';

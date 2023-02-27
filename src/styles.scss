@@ -182,10 +182,10 @@ h3.card-title {
 
 .slippageInput {
   width: 60px;
-  border: 1px solid $Baz;
+  border: 1px solid $spectrum;
 
   &:focus {
-    border: 1px solid $Baz;
+    border: 1px solid $spectrum;
     background-color: transparent;
   }
 }
@@ -355,9 +355,9 @@ input[type="number"] {
   background: linear-gradient(45deg, darken($danger, 7%) 0%, $danger 37%);
 }
 
-.bg-Baz {
-  background: $Baz-bg;
-  border: solid 1px $Baz;
+.bg-Spectrum {
+  background: $spectrum-bg;
+  border: solid 1px $spectrum;
 }
 
 .bg-Mirror {
