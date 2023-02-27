@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import BigNumber from 'bignumber.js';
-import {RewardInfoResponseItem} from '../../../api/Baz_astroport_farm/reward_info_response';
+import {RewardInfoResponseItem} from '../../../api/spectrum_astroport_farm/reward_info_response';
 import {TerrajsService} from '../../../terrajs.service';
 import {
   DEX,
@@ -14,7 +14,7 @@ import {
 import {PoolResponse} from '../../../api/astroport_pair/pool_response';
 import {VaultsResponse} from '../../../api/gov/vaults_response';
 import {Denom} from '../../../../consts/denom';
-import {BazAstroportGenericFarmService} from '../../../api/Baz-astroport-generic-farm.service';
+import {SpectrumAstroportGenericFarmService} from '../../../api/spectrum-astroport-generic-farm.service';
 import {WasmService} from '../../../api/wasm.service';
 import {PairInfo} from '../../../api/astroport_factory/pair_info';
 import {TokenInfo} from '../../../info.service';
@@ -40,7 +40,7 @@ export class AstroportVkrLunaFarmInfoService implements FarmInfoService {
   readonly poolType = 'xyk';
 
   constructor(
-    private farmService: BazAstroportGenericFarmService,
+    private farmService: SpectrumAstroportGenericFarmService,
     private terrajs: TerrajsService,
     private wasm: WasmService,
   ) {

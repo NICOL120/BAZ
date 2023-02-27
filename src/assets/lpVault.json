@@ -4509,7 +4509,7 @@
       "state_spec_share_index": "42600984357.57",
       "spec_share_index": "3.355680637624917958",
       "key": "Terraswap|terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr|uusd",
-      "farm": "Baz",
+      "farm": "Spectrum",
       "farmContract": "terra17hjvrkcwn3jk2qf69s5ldxx5rjccchu35assga",
       "baseTokenContract": "terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr",
       "denomTokenContract": "uusd",
@@ -6258,7 +6258,7 @@
       "unit": 1000000
     },
     "terra1s5eczhe0h0jutf46re52x5z4r03c8hupacxmdr": {
-      "name": "Baz token",
+      "name": "Spectrum token",
       "symbol": "SPEC",
       "decimals": 6,
       "unit": 1000000

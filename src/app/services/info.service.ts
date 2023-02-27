@@ -858,7 +858,7 @@ export class InfoService {
 
       const disabled = poolInfo.disabled;
       let score: number;
-      if (poolInfo.farm === 'Baz') {
+      if (poolInfo.farm === 'Spectrum') {
         score = 2000000;
       } else if (disabled) {
         score = -1;

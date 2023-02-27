@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ExecuteOptions, TerrajsService } from '../terrajs.service';
-import { ConfigResponse } from './Baz_spec_farm/config_response';
-import { ExecuteMsg } from './Baz_spec_farm/execute_msg';
-import { QueryMsg } from './Baz_spec_farm/query_msg';
-import { RewardInfoResponse } from './Baz_spec_farm/reward_info_response';
-import { StateResponse } from './Baz_spec_farm/state_response';
+import { ConfigResponse } from './spectrum_spec_farm/config_response';
+import { ExecuteMsg } from './spectrum_spec_farm/execute_msg';
+import { QueryMsg } from './spectrum_spec_farm/query_msg';
+import { RewardInfoResponse } from './spectrum_spec_farm/reward_info_response';
+import { StateResponse } from './spectrum_spec_farm/state_response';
 import { WasmService } from './wasm.service';
 
 @Injectable({

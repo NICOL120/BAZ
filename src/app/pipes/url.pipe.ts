@@ -18,7 +18,7 @@ export class UrlPipe implements PipeTransform {
     switch (type) {
       case 'icon':
         switch (symbolOrContract) {
-          case 'Baz':
+          case 'Spectrum':
             return '/assets/SPEC.png';
           case 'SPEC':
             return '/assets/SPEC.png';

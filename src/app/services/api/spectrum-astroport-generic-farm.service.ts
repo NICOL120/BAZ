@@ -1,16 +1,16 @@
 import {Injectable} from '@angular/core';
 import {ExecuteOptions, TerrajsService} from '../terrajs.service';
-import {FarmExecuteMsg} from './Baz_astroport_farm/execute_msg';
-import {QueryMsg} from './Baz_astroport_farm/query_msg';
-import {RewardInfoResponse} from './Baz_astroport_farm/reward_info_response';
-import {StateInfo} from './Baz_astroport_farm/state_info';
+import {FarmExecuteMsg} from './spectrum_astroport_farm/execute_msg';
+import {QueryMsg} from './spectrum_astroport_farm/query_msg';
+import {RewardInfoResponse} from './spectrum_astroport_farm/reward_info_response';
+import {StateInfo} from './spectrum_astroport_farm/state_info';
 import {WasmService} from './wasm.service';
-import {InstantiateMsg} from './Baz_astroport_farm/instantiate_msg';
+import {InstantiateMsg} from './spectrum_astroport_farm/instantiate_msg';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BazAstroportGenericFarmService {
+export class SpectrumAstroportGenericFarmService {
 
   constructor(
     private terrajs: TerrajsService,
