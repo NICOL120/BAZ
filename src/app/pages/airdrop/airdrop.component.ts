@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {SpectrumAirdropService} from '../../services/api/spectrum-airdrop.service';
+import {BazAirdropService} from '../../services/api/Baz-airdrop.service';
 import {TerrajsService} from '../../services/terrajs.service';
-import {ConfigResponse} from '../../services/api/spectrum_simple_airdrop/config_response';
+import {ConfigResponse} from '../../services/api/Baz_simple_airdrop/config_response';
 import {catchError, Subscription, throwError} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {ModalService} from '../../services/modal.service';
@@ -25,7 +25,7 @@ export class AirdropComponent implements OnInit {
   private connected: Subscription;
 
   constructor(
-    private airdropService: SpectrumAirdropService,
+    private airdropService: BazAirdropService,
     private terrajs: TerrajsService,
     private httpClient: HttpClient,
     private modal: ModalService,

@@ -1,15 +1,15 @@
 import {Injectable} from '@angular/core';
 import {ExecuteOptions} from '../terrajs.service';
-import {QueryMsg} from './spectrum_compound_proxy/query_msg';
+import {QueryMsg} from './Baz_compound_proxy/query_msg';
 import {WasmService} from './wasm.service';
-import {InstantiateMsg} from './spectrum_compound_proxy/instantiate_msg';
-import {CompoundSimulationResponse} from './spectrum_compound_proxy/compound_simulation_response';
-import {CompoundProxyExecuteMsg} from './spectrum_compound_proxy/execute_msg';
+import {InstantiateMsg} from './Baz_compound_proxy/instantiate_msg';
+import {CompoundSimulationResponse} from './Baz_compound_proxy/compound_simulation_response';
+import {CompoundProxyExecuteMsg} from './Baz_compound_proxy/execute_msg';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SpectrumCompoundProxyService {
+export class BazCompoundProxyService {
 
   constructor(
     private wasm: WasmService,

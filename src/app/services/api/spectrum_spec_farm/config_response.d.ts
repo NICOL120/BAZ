@@ -23,8 +23,8 @@ export type Uint128 = string;
 export interface ConfigResponse {
   distribution_schedule: [number, number, Uint128][];
   owner: string;
-  spectrum_gov: string;
-  spectrum_token: string;
+  Baz_gov: string;
+  Baz_token: string;
   staking_token: string;
   [k: string]: unknown;
 }
