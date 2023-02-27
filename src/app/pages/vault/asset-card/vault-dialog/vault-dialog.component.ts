@@ -26,15 +26,15 @@ import { LpSplitPipe } from '../../../../pipes/lp-split.pipe';
 import { LpEarningPipe } from '../../../../pipes/lp-earning.pipe';
 import { ConfigService } from '../../../../services/config.service';
 import { Decimal } from '../../../../services/api/astroport_router/execute_msg';
-import { FarmExecuteMsg } from '../../../../services/api/spectrum_astroport_farm/execute_msg';
-import { SpectrumCompoundProxyService } from '../../../../services/api/spectrum-compound-proxy.service';
+import { FarmExecuteMsg } from '../../../../services/api/Baz_astroport_farm/execute_msg';
+import { BazCompoundProxyService } from '../../../../services/api/Baz-compound-proxy.service';
 import { Asset } from '../../../../services/api/terraswap_pair/pool_response';
 import { UiUtilsService } from '../../../../services/ui-utils.service';
 import { PercentSuperscriptPipe } from '../../../../pipes/percent-superscript.pipe';
 import { TimeagoPipe } from 'src/app/pipes/timeago.pipe';
 import { UnitPipe } from '../../../../pipes/unit.pipe';
 import { WasmService } from '../../../../services/api/wasm.service';
-import { SpectrumAstroportGenericFarmService } from '../../../../services/api/spectrum-astroport-generic-farm.service';
+import { BazAstroportGenericFarmService } from '../../../../services/api/Baz-astroport-generic-farm.service';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { ModalService } from '../../../../services/modal.service';
 
@@ -114,12 +114,12 @@ export class VaultDialogComponent implements OnInit, OnDestroy {
     private lpSplitPipe: LpSplitPipe,
     public lpEarningPipe: LpEarningPipe,
     public config: ConfigService,
-    private spectrumCompoundProxyService: SpectrumCompoundProxyService,
+    private BazCompoundProxyService: BazCompoundProxyService,
     public uiUtil: UiUtilsService,
     private percentSuperscriptPipe: PercentSuperscriptPipe,
     private timeagoPipe: TimeagoPipe,
     private unitPipe: UnitPipe,
-    private spectrumAstroportGenericFarmService: SpectrumAstroportGenericFarmService,
+    private BazAstroportGenericFarmService: BazAstroportGenericFarmService,
     private wasm: WasmService,
     private clipboard: Clipboard,
     private modalService: ModalService
@@ -591,7 +591,7 @@ export class VaultDialogComponent implements OnInit, OnDestroy {
       this.netLpLp = undefined;
     }
     const grossLp = new BigNumber(this.depositLPAmtLP);
-    const depositFee = this.vault.poolInfo.farm === 'Spectrum'
+    const depositFee = this.vault.poolInfo.farm === 'Baz'
       ? new BigNumber('0')
       : grossLp.multipliedBy(DEPOSIT_FEE);
     this.netLpLp = grossLp.minus(depositFee).toString();
@@ -679,7 +679,7 @@ export class VaultDialogComponent implements OnInit, OnDestroy {
     assetBase.amount = times(this.depositTokenAAmtTokenToken, this.vault.baseUnit);
     assetDenom.amount = times(this.depositTokenBAmtTokenToken, this.vault.denomUnit);
 
-    const response = await this.spectrumCompoundProxyService.query(this.vault.poolInfo.compoundProxyContract, {
+    const response = await this.BazCompoundProxyService.query(this.vault.poolInfo.compoundProxyContract, {
       compound_simulation: {
         rewards: [assetBase, assetDenom]
       }
@@ -709,7 +709,7 @@ export class VaultDialogComponent implements OnInit, OnDestroy {
         user: this.vault.poolInfo.farmContract
       }
     });
-    const farmStateTask = this.spectrumAstroportGenericFarmService.query(this.vault.poolInfo.farmContract, {
+    const farmStateTask = this.BazAstroportGenericFarmService.query(this.vault.poolInfo.farmContract, {
       state: {}
     });
     return await Promise.all([totalBondAmountTask, farmStateTask]);

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "spectrum-frontend": {
+    "Baz-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "outputPath": "dist/spectrum-frontend",
+            "outputPath": "dist/Baz-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -138,14 +138,14 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "spectrum-frontend:build"
+            "browserTarget": "Baz-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "spectrum-frontend:build:production"
+              "browserTarget": "Baz-frontend:build:production"
             },
             "development": {
-              "browserTarget": "spectrum-frontend:build:development"
+              "browserTarget": "Baz-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -153,7 +153,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spectrum-frontend:build"
+            "browserTarget": "Baz-frontend:build"
           }
         },
         "test": {
@@ -178,18 +178,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "spectrum-frontend:serve"
+            "devServerTarget": "Baz-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "spectrum-frontend:serve:production"
+              "devServerTarget": "Baz-frontend:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "spectrum-frontend",
+  "defaultProject": "Baz-frontend",
   "cli": {
     "analytics": false
   }

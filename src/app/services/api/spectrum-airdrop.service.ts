@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { ExecuteOptions, TerrajsService } from '../terrajs.service';
-import { ConfigResponse } from './spectrum_simple_airdrop/config_response';
-import { ExecuteMsg } from './spectrum_simple_airdrop/execute_msg';
-import { QueryMsg } from './spectrum_simple_airdrop/query_msg';
-import { StateResponse } from './spectrum_simple_airdrop/state_response';
-import { UserInfoResponse } from './spectrum_simple_airdrop/user_info_response';
+import { ConfigResponse } from './Baz_simple_airdrop/config_response';
+import { ExecuteMsg } from './Baz_simple_airdrop/execute_msg';
+import { QueryMsg } from './Baz_simple_airdrop/query_msg';
+import { StateResponse } from './Baz_simple_airdrop/state_response';
+import { UserInfoResponse } from './Baz_simple_airdrop/user_info_response';
 import { WasmService } from './wasm.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SpectrumAirdropService {
+export class BazAirdropService {
 
   constructor(
     private wasm: WasmService,
