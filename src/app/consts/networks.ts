@@ -21,7 +21,6 @@ export interface ISettings {
   ampLunaToken: string;
   boneLunaToken: string;
   redToken: string;
-  sayveToken: string;
   astroportGov: string;
   astroportGenerator: string;
   // MAINNET ONLY
@@ -43,8 +42,6 @@ export interface ISettings {
   astroportbLunaLunaFarmCompoundProxy: string;
   astroportRedLunaFarm: string,
   astroportRedLunaFarmCompoundProxy: string,
-  astroportSayveLunaFarm: string,
-  astroportSayveLunaFarmCompoundProxy: string,
   // MAINNET ONLY
   // TESTNET ONLY
   astroportAstroLunaFarm: string;
@@ -91,30 +88,27 @@ export const networks: Record<string, ISettings> = {
     ampLunaToken: 'terra1ecgazyd0waaj3g7l9cmy5gulhxkps2gmxu9ghducvuypjq68mq2s5lvsct',
     boneLunaToken: 'terra17aj4ty4sz4yhgm08na8drc0v03v2jwr3waxcqrwhajj729zhl7zqnpc0ml',
     redToken: 'terra1xe8umegahlqphtpvjsuwfzfvyjfvag5h8rffsx6ezm0el4xzsf8s7uzezk',
-    sayveToken: 'terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
     astroportGov: '',
-    astroportGenerator: 'terra1lfsq2rmu40rga90k5xh973p6apu55n67asf2y7k7gd87s0hsqk8sxvs6hg', // 'terra1ksvlfex49desf4c452j6dewdjs6c48nafemetuwjyj6yexd7x3wqvwa7j9',
+    astroportGenerator: 'terra1vf9ceekuxx8kycm7yv6hs96hgwsmrzt4la6s84skrgvfu7t09huqqdg09d', // 'terra1ksvlfex49desf4c452j6dewdjs6c48nafemetuwjyj6yexd7x3wqvwa7j9',
     // MAINNET ONLY
-    astroportAstroAxlUsdcFarm: '', // pair: terra1w579ysjvpx7xxhckxewk8sykxz70gm48wpcuruenl29rhe6p6raslhj0m6, lp: terra16esjk7qqlgh8w7p2a58yxhgkfk4ykv72p7ha056zul58adzjm6msvc674t
-    astroportAstroAxlUsdcFarmCompoundProxy: '',
-    astroportAxlUsdcAxlUsdtFarm: '', // pair: terra1ygn5h8v8rm0v8y57j3mtu3mjr2ywu9utj6jch6e0ys2fc2pkyddqekwrew, lp: terra1khsxwfnzuxqcyza2sraxf2ngkr3dwy9f7rm0uts0xpkeshs96ccsqtu6nv
-    astroportAxlUsdcAxlUsdtFarmCompoundProxy: '',
-    astroportAxlUsdcLunaFarm: '', // pair: terra1fd68ah02gr2y8ze7tm9te7m70zlmc7vjyyhs6xlhsdmqqcjud4dql4wpxr, lp: terra1ckmsqdhlky9jxcmtyj64crgzjxad9pvsd58k8zsxsnv4vzvwdt7qke04hl
-    astroportAxlUsdcLunaFarmCompoundProxy: '',
-    astroportLunaXLunaFarm: '', // pair : terra1mpj7j25fw5a0q5vfasvsvdp6xytaqxh006lh6f5zpwxvadem9hwsy6m508, lp: terra1kggfd6z0ad2k9q8v24f7ftxyqush8fp9xku9nyrjcs2wv0e4kypszfrfd0
-    astroportLunaXLunaFarmCompoundProxy: '',
-    astroportVkrAxlUsdcFarm: '', // pair : terra1alzkrc6hkvs8g5a064cukfxnv0jj4l3l8vhgfypfxvysk78v6dgqsymgmv, lp :terra18mcmlf4v23ehukkh7qxgpf5tznzg6893fxmf9ffmdt9phgf365zqvmlug6
-    astroportVkrAxlUsdcFarmCompoundProxy: '',
-    astroportTptLunaFarm: '', // pair: terra15l5pqlp8q5d4z8tvermadvp429d8pfctg4j802t8edzkf8aavp7q59t7er lp: terra1ces6k6jp7qzkjpwsl6xg4f7zfwre0u23cglg69hhj3g20fhygtpsu24dsy
-    astroportTptLunaFarmCompoundProxy: '',
-    astroportAmpLunaLunaFarm: '', // pair: terra1cr8dg06sh343hh4xzn3gxd3ayetsjtet7q5gp4kfrewul2kql8sqvhaey4 lp: terra1cq22eugxwgp0x34cqfrxmd9jkyy43gas93yqjhmwrm7j0h5ecrqq5j7dgp
-    astroportAmpLunaLunaFarmCompoundProxy: '',
-    astroportbLunaLunaFarm: '', // pair: terra1h32epkd72x7st0wk49z35qlpsxf26pw4ydacs8acq6uka7hgshmq7z7vl9 lp: terra1h3z2zv6aw94fx5263dy6tgz6699kxmewlx3vrcu4jjrudg6xmtyqk6vt0u
-    astroportbLunaLunaFarmCompoundProxy: '',
-    astroportRedLunaFarm: '', // pair: terra1zhq0rqermczklmw89ranmgz28zthsthw6u35umgvpykfwzlwtgcsylpqqf lp: terra1ua7uk7xvx89dg8tnr8k8smk5vermlaer50zsglmpx8plttaxvvtsem5fgy
-    astroportRedLunaFarmCompoundProxy: '',
-    astroportSayveLunaFarm: 'terra1utssrnavqtsktkshepzlg97a23wf5negj3wzrr33ka6gjvga3u8q5jrf3x', // pair: terra1nckl6ex6239tv4kjzv03ecmuxwakjm8uj8cy6p850vmlmejfmj9sy094yr lp: terra1zqthrqndchxp5ye443zdulhhh2938uak78q4ztthfrnkfltpgrpsu3c5xd
-    astroportSayveLunaFarmCompoundProxy: 'terra18ts75zvsg563w8v52r8hzawtvau9zal2yxm5zfyssppssulvqjhscfku7m',
+    astroportAstroAxlUsdcFarm: 'terra144mkz6p3mmnuqaenu73pg4jwayr3m28xzhaxedlfwfnyke45w6yqvf9ed6', // pair: terra1w579ysjvpx7xxhckxewk8sykxz70gm48wpcuruenl29rhe6p6raslhj0m6, lp: terra16esjk7qqlgh8w7p2a58yxhgkfk4ykv72p7ha056zul58adzjm6msvc674t
+    astroportAstroAxlUsdcFarmCompoundProxy: 'terra1jjajqlvjycmze540pzqq2wekqtt6tkn3d9t3muwfelqz43ewwdkskqn0tx',
+    astroportAxlUsdcAxlUsdtFarm: 'terra1ufpsjrvj5fkvdedx2ttslnrc2wxvrftf4zcsvu778cufvlh4m9dsmgcf6f', // pair: terra1ygn5h8v8rm0v8y57j3mtu3mjr2ywu9utj6jch6e0ys2fc2pkyddqekwrew, lp: terra1khsxwfnzuxqcyza2sraxf2ngkr3dwy9f7rm0uts0xpkeshs96ccsqtu6nv
+    astroportAxlUsdcAxlUsdtFarmCompoundProxy: 'terra155c9lt7vw7dut2y7ltdhgw4g6r4x6spetple795ecf39sqps6dtqy4zddg',
+    astroportAxlUsdcLunaFarm: 'terra1erm54gtdtfqv2s4c7ple3kmret7eecuj02nk5w8h08jjnenjffzsynsp0u', // pair: terra1fd68ah02gr2y8ze7tm9te7m70zlmc7vjyyhs6xlhsdmqqcjud4dql4wpxr, lp: terra1ckmsqdhlky9jxcmtyj64crgzjxad9pvsd58k8zsxsnv4vzvwdt7qke04hl
+    astroportAxlUsdcLunaFarmCompoundProxy: 'terra1zd70awvqdxgzu9zymkkg2kng9wq2s7vxug33ydcmj7ve6st6du0ql2e0zn',
+    astroportLunaXLunaFarm: 'terra1qczgczguzmxpsqfwlcaqm5hpy3jrkgrkkkcdxhd4uf28t8l8j6qsgtd863', // pair : terra1mpj7j25fw5a0q5vfasvsvdp6xytaqxh006lh6f5zpwxvadem9hwsy6m508, lp: terra1kggfd6z0ad2k9q8v24f7ftxyqush8fp9xku9nyrjcs2wv0e4kypszfrfd0
+    astroportLunaXLunaFarmCompoundProxy: 'terra190rnel2k0nmt9qmqh57rfnaxf9x5a24e2xeg3tn94vdg9mwf2pws55jmw6',
+    astroportVkrAxlUsdcFarm: 'terra1ha4yvzqnq4mpu205wcd430m6m7wjklpquwn87dq89g9zersuvryses7rua', // pair : terra1alzkrc6hkvs8g5a064cukfxnv0jj4l3l8vhgfypfxvysk78v6dgqsymgmv, lp :terra18mcmlf4v23ehukkh7qxgpf5tznzg6893fxmf9ffmdt9phgf365zqvmlug6
+    astroportVkrAxlUsdcFarmCompoundProxy: 'terra1pkuf6adp9gjmqvjlwkgvjrn3w09gfe7gukdevr5lqnltvna6c4rqa3rpf6',
+    astroportTptLunaFarm: 'terra1udwqynsmrme00ksrakkyerrfjdkw9p05557yrrw6ca6x94uuj2zs0vpqt2', // pair: terra15l5pqlp8q5d4z8tvermadvp429d8pfctg4j802t8edzkf8aavp7q59t7er lp: terra1ces6k6jp7qzkjpwsl6xg4f7zfwre0u23cglg69hhj3g20fhygtpsu24dsy
+    astroportTptLunaFarmCompoundProxy: 'terra18t4wj99s23yd34x8vmlttdwlqjhae7xvyzwfaryyem6s2yzvnmrsp87493',
+    astroportAmpLunaLunaFarm: 'terra1gxqzjk4pkyzpnxnrz7h486vntvv4lmaukcs24v9gcsmcm4tyre7qytcm5e', // pair: terra1cr8dg06sh343hh4xzn3gxd3ayetsjtet7q5gp4kfrewul2kql8sqvhaey4 lp: terra1cq22eugxwgp0x34cqfrxmd9jkyy43gas93yqjhmwrm7j0h5ecrqq5j7dgp
+    astroportAmpLunaLunaFarmCompoundProxy: 'terra125yu3wj3qkc2hrn46h54nhufsekd38m7fvx9c3zdrlt6l6dhekksgv4qdn',
+    astroportbLunaLunaFarm: 'terra1w6l7kjc6wu7an37wnnehcfc3tpksw9tde9u67743ew0caly0hdasv0ws79', // pair: terra1h32epkd72x7st0wk49z35qlpsxf26pw4ydacs8acq6uka7hgshmq7z7vl9 lp: terra1h3z2zv6aw94fx5263dy6tgz6699kxmewlx3vrcu4jjrudg6xmtyqk6vt0u
+    astroportbLunaLunaFarmCompoundProxy: 'terra1dj5a533qyxgcvrhum9zusplnnpv6a6dal7xd67gp2qprqwzew4dqx4dhch',
+    astroportRedLunaFarm: 'terra1j9ggd8wf73ggsfet99wnjvn06f3l9w9lsf50uac43h6vclysfc9sp0nyfh', // pair: terra1zhq0rqermczklmw89ranmgz28zthsthw6u35umgvpykfwzlwtgcsylpqqf lp: terra1ua7uk7xvx89dg8tnr8k8smk5vermlaer50zsglmpx8plttaxvvtsem5fgy
+    astroportRedLunaFarmCompoundProxy: 'terra1rzxfvde2dhe3l44r3llugqpuxl4njps0xk2ss96vfmlw3nmhusdqt8zphj',
     // MAINNET ONLY
     // TESTNET ONLY
     astroportAstroLunaFarm: '',
@@ -131,10 +125,10 @@ export const networks: Record<string, ISettings> = {
     lcd: 'https://phoenix-lcd.terra.dev',
     fcd: 'https://phoenix-fcd.terra.dev',
     querier: '',
-    specAPI: 'https://spec-api-eeh8efcmd2b0fffh.z01.azurefd.net/api',
+    specAPI: 'https://spec-api.azurefd.net/api',
     chainID: 'phoenix-1',
     finder: 'https://terrasco.pe',
-    astroport_gql: 'astroport_multichain'
+    astroport_gql: 'astroport_mainnet'
   },
   testnet: {
     specToken: 'terra1jtu03gxpssmxcxydqs5dzsavdz8jum9a3un36tyuhyjhzamxf4gqlj2q48',
@@ -159,7 +153,6 @@ export const networks: Record<string, ISettings> = {
     ampLunaToken: '',
     boneLunaToken: '',
     redToken: '',
-    sayveToken: '',
     astroportGov: '',
     astroportGenerator: 'terra1pplp2s7u3h9cn3qddm7yfw7stajl8fqlu7tzr097697jx3ahtkqsnzvedu', // 'terra1gc4d4v82vjgkz0ag28lrmlxx3tf6sq69tmaujjpe7jwmnqakkx0qm28j2l',
     // MAINNET ONLY
@@ -181,8 +174,6 @@ export const networks: Record<string, ISettings> = {
     astroportbLunaLunaFarmCompoundProxy: '',
     astroportRedLunaFarm: '',
     astroportRedLunaFarmCompoundProxy: '',
-    astroportSayveLunaFarm: '',
-    astroportSayveLunaFarmCompoundProxy: '',
     // MAINNET ONLY
     // TESTNET ONLY
     astroportAstroLunaFarm: 'terra1e9xfd3zxnra963meea5e7vvdm89dwd2tgvg4cq96q33c2s204cuqgl3wxq',
@@ -202,6 +193,6 @@ export const networks: Record<string, ISettings> = {
     specAPI: 'https://terra2-testapi.spec.finance/api',
     chainID: 'pisco-1',
     finder: 'https://finder.terra.money',
-    astroport_gql: 'astroport_multichain'
+    astroport_gql: 'astroport_testnet'
   },
 };
