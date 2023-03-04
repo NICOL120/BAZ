@@ -99,7 +99,7 @@ export const networks: Record<string, ISettings> = {
     stLUNAToken: 'ibc/08095CEDEA29977C9DD0CE9A48329FDA622C183359D5F90CF04CC4FF80CBE431',
     xAstroToken: 'terra1x62mjnme4y0rdnag3r8rfgjuutsqlkkyuh4ndgex0wl3wue25uksau39q8',
     astroportGov: '',
-    astroportGenerator: 'terra1lfsq2rmu40rga90k5xh973p6apu55n67asf2y7k7gd87s0hsqk8sxvs6hg', // 'terra1ksvlfex49desf4c452j6dewdjs6c48nafemetuwjyj6yexd7x3wqvwa7j9',
+    astroportGenerator: 'terra1m42utlz6uvnlzn82f58pfkkuxw8j9vf24hf00t54qfn4k23fhj3q70vqd0', // 'terra1ksvlfex49desf4c452j6dewdjs6c48nafemetuwjyj6yexd7x3wqvwa7j9',
     // MAINNET ONLY
     astroportAstroAxlUsdcFarm: 'terra144mkz6p3mmnuqaenu73pg4jwayr3m28xzhaxedlfwfnyke45w6yqvf9ed6', // pair: terra1w579ysjvpx7xxhckxewk8sykxz70gm48wpcuruenl29rhe6p6raslhj0m6, lp: terra16esjk7qqlgh8w7p2a58yxhgkfk4ykv72p7ha056zul58adzjm6msvc674t
     astroportAstroAxlUsdcFarmCompoundProxy: 'terra1jjajqlvjycmze540pzqq2wekqtt6tkn3d9t3muwfelqz43ewwdkskqn0tx',
@@ -121,8 +121,8 @@ export const networks: Record<string, ISettings> = {
     astroportRedLunaFarmCompoundProxy: 'terra1rzxfvde2dhe3l44r3llugqpuxl4njps0xk2ss96vfmlw3nmhusdqt8zphj',
     astroportSayveLunaFarm: 'terra1v9luz2r9u8mzd4w8ew5dm4cczk8kcxun4jry464j48jsl2fus2qss73ld4', // pair: terra1nckl6ex6239tv4kjzv03ecmuxwakjm8uj8cy6p850vmlmejfmj9sy094yr lp: terra1zqthrqndchxp5ye443zdulhhh2938uak78q4ztthfrnkfltpgrpsu3c5xd
     astroportSayveLunaFarmCompoundProxy: 'terra1cgya885wdlqvu2ad0fengce39lyvq02ccczh7w7hkt7yylll2klsw62urq',
-    astroportLunaStLunaFarm: 'terra1tjysyua0m9vxwc2rhfpsy3pxs26upaa7xfdmxtupjsec0m87dj8sqd8ryg', // pair: terra1re0yj0j6e9v2szg7kp02ut6u8jjea586t6pnpq6628wl36fphtpqwt6l7p lp : terra14n22zd24nath0tf8fwn468nz7753rjuks67ppddrcqwq37x2xsxsddqxqc
-    astroportLunaStLunaFarmCompoundProxy: 'terra1whrmnpx5warxkfka9ruqdremetft8qc66du645ld9hk0j4tz3h4sfw4drk',
+    astroportLunaStLunaFarm: 'terra1l4phwrfqyg9l0vzlqcxn0vmnjd45rp5gx620zc2updpc9peazteqfk3y2p', // pair: terra1re0yj0j6e9v2szg7kp02ut6u8jjea586t6pnpq6628wl36fphtpqwt6l7p lp : terra14n22zd24nath0tf8fwn468nz7753rjuks67ppddrcqwq37x2xsxsddqxqc
+    astroportLunaStLunaFarmCompoundProxy: 'terra1cs0tkknd2t94jd7hgdkmfyvenwr05ztra4rj6uackr597j9jfkxsghtywg',
     // MAINNET ONLY
     // TESTNET ONLY
     astroportAstroLunaFarm: '',
