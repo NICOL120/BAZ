@@ -46,6 +46,10 @@ export interface ISettings {
 
   sayveToken: string;
 
+  stLUNAToken: string;
+
+  xAstroToken: string;
+
   astroportGov: string;
 
   astroportGenerator: string;
@@ -84,13 +88,17 @@ export interface ISettings {
 
   astroportbLunaLunaFarmCompoundProxy: string;
 
-  astroportRedLunaFarm: string,
+  astroportRedLunaFarm: string;
 
-  astroportRedLunaFarmCompoundProxy: string,
+  astroportRedLunaFarmCompoundProxy: string;
 
-  astroportSayveLunaFarm: string,
+  astroportSayveLunaFarm: string;
 
-  astroportSayveLunaFarmCompoundProxy: string,
+  astroportSayveLunaFarmCompoundProxy: string;
+
+  astroportLunaStLunaFarm: string;
+
+  astroportLunaStLunaFarmCompoundProxy: string;
 
   // MAINNET ONLY
 
@@ -184,6 +192,10 @@ export const networks: Record<string, ISettings> = {
 
     sayveToken: 'terra1xp9hrhthzddnl7j5du83gqqr4wmdjm5t0guzg9jp6jwrtpukwfjsjgy4f3',
 
+    stLUNAToken: 'ibc/08095CEDEA29977C9DD0CE9A48329FDA622C183359D5F90CF04CC4FF80CBE431',
+
+    xAstroToken: 'terra1x62mjnme4y0rdnag3r8rfgjuutsqlkkyuh4ndgex0wl3wue25uksau39q8',
+
     astroportGov: '',
 
     astroportGenerator: 'terra1lfsq2rmu40rga90k5xh973p6apu55n67asf2y7k7gd87s0hsqk8sxvs6hg', // 'terra1ksvlfex49desf4c452j6dewdjs6c48nafemetuwjyj6yexd7x3wqvwa7j9',
@@ -226,9 +238,13 @@ export const networks: Record<string, ISettings> = {
 
     astroportRedLunaFarmCompoundProxy: 'terra1rzxfvde2dhe3l44r3llugqpuxl4njps0xk2ss96vfmlw3nmhusdqt8zphj',
 
-    astroportSayveLunaFarm: 'terra18ts75zvsg563w8v52r8hzawtvau9zal2yxm5zfyssppssulvqjhscfku7m', // pair: terra1nckl6ex6239tv4kjzv03ecmuxwakjm8uj8cy6p850vmlmejfmj9sy094yr lp: terra1zqthrqndchxp5ye443zdulhhh2938uak78q4ztthfrnkfltpgrpsu3c5xd
+    astroportSayveLunaFarm: 'terra1v9luz2r9u8mzd4w8ew5dm4cczk8kcxun4jry464j48jsl2fus2qss73ld4', // pair: terra1nckl6ex6239tv4kjzv03ecmuxwakjm8uj8cy6p850vmlmejfmj9sy094yr lp: terra1zqthrqndchxp5ye443zdulhhh2938uak78q4ztthfrnkfltpgrpsu3c5xd
 
-    astroportSayveLunaFarmCompoundProxy: 'terra18ts75zvsg563w8v52r8hzawtvau9zal2yxm5zfyssppssulvqjhscfku7m',
+    astroportSayveLunaFarmCompoundProxy: 'terra1cgya885wdlqvu2ad0fengce39lyvq02ccczh7w7hkt7yylll2klsw62urq',
+
+    astroportLunaStLunaFarm: 'terra1tjysyua0m9vxwc2rhfpsy3pxs26upaa7xfdmxtupjsec0m87dj8sqd8ryg', // pair: terra1re0yj0j6e9v2szg7kp02ut6u8jjea586t6pnpq6628wl36fphtpqwt6l7p lp : terra14n22zd24nath0tf8fwn468nz7753rjuks67ppddrcqwq37x2xsxsddqxqc
+
+    astroportLunaStLunaFarmCompoundProxy: 'terra1whrmnpx5warxkfka9ruqdremetft8qc66du645ld9hk0j4tz3h4sfw4drk',
 
     // MAINNET ONLY
 
@@ -320,6 +336,10 @@ export const networks: Record<string, ISettings> = {
 
     sayveToken: '',
 
+    stLUNAToken: '',
+
+    xAstroToken: '',
+
     astroportGov: '',
 
     astroportGenerator: 'terra1pplp2s7u3h9cn3qddm7yfw7stajl8fqlu7tzr097697jx3ahtkqsnzvedu', // 'terra1gc4d4v82vjgkz0ag28lrmlxx3tf6sq69tmaujjpe7jwmnqakkx0qm28j2l',
@@ -365,6 +385,10 @@ export const networks: Record<string, ISettings> = {
     astroportSayveLunaFarm: '',
 
     astroportSayveLunaFarmCompoundProxy: '',
+
+    astroportLunaStLunaFarm: '',
+
+    astroportLunaStLunaFarmCompoundProxy: '',
 
     // MAINNET ONLY
 
