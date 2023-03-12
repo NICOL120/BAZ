@@ -48,6 +48,7 @@
             "assets": [
               "src/404.html",
               "src/favicon.ico",
+              "src/robots.txt",
               "src/ads.txt",
               "src/assets",
               {
